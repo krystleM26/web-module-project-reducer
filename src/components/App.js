@@ -15,6 +15,12 @@ from '../actions/index'
 
 function App() {
 
+  // Handler Events
+  const handleClick = (e) => {
+    dispatch(addOne(1))
+    console.log(e);
+  }
+
   const [ state, dispatch] = useReducer(reducer, initialState)
   
   return (
